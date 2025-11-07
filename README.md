@@ -4,6 +4,8 @@ This repository contains a small RAG (Retrieval-Augmented Generation) demo that 
 
 This README explains the approach, how to set up and run the project, and where to look in the code (`app.py`).
 
+[Click here to interact with the hosted space on Hugging Face and interact with Gradio UI](https://huggingface.co/spaces/timefullytrue/LegalRagAgent)
+
 ## Project contract
 
 - Inputs: a short text query (string) from the user.
@@ -146,5 +148,6 @@ Each LangGraph node expects and returns this `state` dict.
 - `create_merged_vector_store` — merges per-file FAISS stores
 - LangGraph node functions: `plan_node`, `retrieve_node`, `answer_node`, `reflect_node`
 - `run_query` — orchestrates the graph and is the Gradio-exposed function
+
 
 ---
